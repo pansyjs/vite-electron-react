@@ -42,6 +42,7 @@
     "electron-releases": "3.862.0",
     "husky": "7.0.4",
     "lint-staged": "12.0.2",
+    "pinst": "^2.1.6",
     "prettier": "2.4.1",
     "react-devtools": "4.21.0",
     "rimraf": "3.0.2",
