@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "script-run ./scripts/start.ts",
-    "build:src": "cross-env MODE=production walrus run ./scripts/build.ts",
     "build:icon": "electron-icon-builder --input=./build/logo.png --output=./build",
+    "build:src": "cross-env MODE=production walrus run ./scripts/build.ts",
     "postinstall": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "start": "script-run ./scripts/start.ts"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -24,7 +24,7 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "15.0.0",
+    "@commitlint/cli": "14.1.0",
     "@types/prettier": "^2",
     "@types/react": "^17",
     "@types/react-dom": "^17",
@@ -44,6 +44,7 @@
     "lint-staged": "12.0.2",
     "pinst": "^2.1.6",
     "prettier": "2.4.1",
+    "prettier-plugin-packagejson": "^2.2.15",
     "react-devtools": "4.21.0",
     "rimraf": "3.0.2",
     "semantic-release": "18.0.0",
