@@ -6,4 +6,4 @@ const Configuration = {
   extends: ['gitmoji'],
 };
 
-export default Configuration;
+module.exports = Configuration;
