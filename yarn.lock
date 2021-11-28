@@ -3999,6 +3999,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@walrus/commit-emoji@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@walrus/commit-emoji@npm:1.0.2"
+  dependencies:
+    "@walrus/commit-types": 1.0.2
+  checksum: 35bb5a0e537b625f7f4ff615b7485064fdc7b6821fe7ab23b211df99e875b8586da0dcef501954220443ac24612a066f7d51e5265ba207699509907e0b38b806
+  languageName: node
+  linkType: hard
+
+"@walrus/commit-types@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@walrus/commit-types@npm:1.0.2"
+  checksum: a726d97bb490fb76d7997a7c542eb46df4c1bd2c84bfc464b9faf37f582986a9e157e91bbe3c4eaec7531651559d7dabcf1fb0ccab2450384ad28f9b60ca6cc4
+  languageName: node
+  linkType: hard
+
+"@walrus/commitlint-config-emoji@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@walrus/commitlint-config-emoji@npm:1.0.3"
+  dependencies:
+    "@walrus/commit-types": 1.0.2
+    "@walrus/commitlint-plugin-emoji": 1.0.3
+  checksum: 0832b5bd5a86d72906141536a5182cb209d4f93a4049e173e7b34e1b4d547bc6f76a8b6e9b8fa583c878e74a183b4b24c71ed7ff5c008b2d917899da4aa88a4f
+  languageName: node
+  linkType: hard
+
+"@walrus/commitlint-plugin-emoji@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@walrus/commitlint-plugin-emoji@npm:1.0.3"
+  dependencies:
+    "@walrus/commit-emoji": 1.0.2
+    emoji-name-map: ^1.2.9
+  checksum: b41a1d6169bf5749c15fd2b55fee8a973ade5f614eea02fdcf94e57c4635bbade8474beed9ebca3bbfdd50c1bd9191f6227986fe3eeca2c6993a0c9cdc4c46e5
+  languageName: node
+  linkType: hard
+
 "@walrus/joycon-ts-loader@npm:1.0.0":
   version: 1.0.0
   resolution: "@walrus/joycon-ts-loader@npm:1.0.0"
@@ -5550,29 +5586,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commitlint-config-gitmoji@npm:2.2.5":
-  version: 2.2.5
-  resolution: "commitlint-config-gitmoji@npm:2.2.5"
-  dependencies:
-    "@gitmoji/commit-types": 1.1.5
-    "@gitmoji/parser-opts": 1.3.0
-    commitlint-plugin-gitmoji: 2.2.0
-  checksum: 8ae2929eceba1e17da44358a00439e5c018ffb5a9f457c0e2f53a9204fabf1dc4136d764ba8075a8bc66b4b20af0a88b472c1b90303df0760f60ba03a18c9e24
-  languageName: node
-  linkType: hard
-
-"commitlint-plugin-gitmoji@npm:2.2.0":
-  version: 2.2.0
-  resolution: "commitlint-plugin-gitmoji@npm:2.2.0"
-  dependencies:
-    dotenv: ^8.2.0
-    emoji-name-map: ^1.2.9
-  peerDependencies:
-    commitlint: ^11.0.0
-  checksum: 7e803534e4a037668174fcde6102f123184d52974dccd189611ce12f446b4da99afa06c9b80147e5317e91c3f004e548104336a479c35f6ca097c2859ac2b192
-  languageName: node
-  linkType: hard
-
 "common-ancestor-path@npm:^1.0.1":
   version: 1.0.1
   resolution: "common-ancestor-path@npm:1.0.1"
@@ -6362,13 +6375,6 @@ __metadata:
   version: 5.1.0
   resolution: "dotenv-expand@npm:5.1.0"
   checksum: 8017675b7f254384915d55f9eb6388e577cf0a1231a28d54b0ca03b782be9501b0ac90ac57338636d395fa59051e6209e9b44b8ddf169ce6076dffb5dea227d3
-  languageName: node
-  linkType: hard
-
-"dotenv@npm:^8.2.0":
-  version: 8.6.0
-  resolution: "dotenv@npm:8.6.0"
-  checksum: 38e902c80b0666ab59e9310a3d24ed237029a7ce34d976796349765ac96b8d769f6df19090f1f471b77a25ca391971efde8a1ea63bb83111bd8bec8e5cc9b2cd
   languageName: node
   linkType: hard
 
@@ -13595,8 +13601,8 @@ __metadata:
     "@types/react-dom": ^17
     "@types/rimraf": ^3
     "@vitejs/plugin-react-refresh": 1.3.6
+    "@walrus/commitlint-config-emoji": ^1.0.3
     "@walrus/script-run": 1.2.0
-    commitlint-config-gitmoji: 2.2.5
     cross-env: 7.0.3
     electron: 15.3.1
     electron-builder: 22.13.1
